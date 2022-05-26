@@ -58,26 +58,30 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="well well-sm">
-                        <form id="form_contact"  class="form-horizontal" action="contact.html" onsubmit="sendMail(event)">
+                        <form id="form_contact" class="form-horizontal" action="contact.html"
+                            onsubmit="sendMail(event)">
                             <fieldset>
                                 <legend class="text-center headerContact">SEND ME A MESSAGE</legend>
-                               
+
                                 <div class="form-group has-feedback">
                                     <i class="fa fa-user form-control-feedback"></i>
                                     <input id="fname" name="name" type="text" placeholder="First Name *"
-                                        class="form-control" onkeydown="validateName()"><div id="err_form" class="error_name"></div>
+                                        class="form-control" onkeydown="validateName()">
+                                    <div id="err_form" class="error_name"></div>
                                 </div>
 
                                 <div class="form-group has-feedback">
                                     <i class="fa fa-user form-control-feedback"></i>
                                     <input id="lname" name="name" type="text" placeholder="Last Name *"
-                                        class="form-control" onkeydown="validateLastName()"><div id="err_form" class="error_lastname"></div>
+                                        class="form-control" onkeydown="validateLastName()">
+                                    <div id="err_form" class="error_lastname"></div>
                                 </div>
 
                                 <div class="form-group has-feedback">
                                     <i class="fa fa-envelope-o form-control-feedback"></i>
                                     <input id="email" id="email" type="text" placeholder="Email Address *"
-                                        class="form-control" onkeydown="validateEmail()"><div id="err_form" class="error_email"></div>
+                                        class="form-control" onkeydown="validateEmail()">
+                                    <div id="err_form" class="error_email"></div>
                                 </div>
 
                                 <div class="form-group has-feedback">
@@ -89,7 +93,8 @@
                                     <i class="fa fa-pencil-square-o form-control-feedback"></i>
                                     <textarea class="form-control" id="message" name="message"
                                         placeholder="Enter your massage for us here. We will get back to you within 2 business days. *"
-                                        rows="7" onkeydown="validateMsg()"></textarea><div id="err_form" class="error_msg"></div>
+                                        rows="7" onkeydown="validateMsg()"></textarea>
+                                    <div id="err_form" class="error_msg"></div>
                                 </div>
 
                                 <div class="form-group">
@@ -105,14 +110,16 @@
         </section>
         <!-- Maps -->
         <section id="container-map">
-            <div class="map-responsive">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2256707676734!2d-58.489022385217055!3d-34.57315598046737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb65de5740c81%3A0x5d2b277f9f8047b8!2sFranklin%20D.%20Roosevelt%205023%2C%20C1431BZE%20CABA!5e0!3m2!1ses-419!2sar!4v1653314121480!5m2!1ses-419!2sar"
-                    allowfullscreen="" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+            <section id="container-map">
+                <div class="map-responsive">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2256707676734!2d-58.489022385217055!3d-34.57315598046737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb65de5740c81%3A0x5d2b277f9f8047b8!2sFranklin%20D.%20Roosevelt%205023%2C%20C1431BZE%20CABA!5e0!3m2!1ses-419!2sar!4v1653314121480!5m2!1ses-419!2sar"
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
         </section>
     </main>
     <footer id="footer">
@@ -135,4 +142,5 @@
     <script src="./js/btnTop.js"></script>
     <script src="./js/validate.js"></script>
 </body>
+
 </html>

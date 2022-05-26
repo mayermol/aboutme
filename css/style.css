@@ -181,6 +181,7 @@ header {
 }
 
 .img_wrap {
+    position: relative;
     width: 270px;
     height: 358px;
     background-size: cover;
@@ -188,26 +189,65 @@ header {
     box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
     /* overflow: hidden; */
     margin: 15px;
-    background-color: #7ed321;
+    /* background-color: #7ed321; */
     
 }
 
 .img_wrap img {
+    position: absolute; 
     width: 270px;
     height: 100%;
     transition: 2s;
+    z-index: 1;
 }
 
 .img_wrap img:hover {
-    transform: translateY(-15%);
+    transform: translateY(-30%);
     filter: brightness(80%);
 }
+
+.img_wrap div {
+    background-color:#FFF;
+    position: absolute; 
+    z-index: 2;
+    top: 255px; 
+    width: 270px;
+    height: 110px;
+    text-align:left;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.2);
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.title-1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.title-1:hover {
+    color: #7ed321;
+}
+
+.title-2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.title-3 {
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
 
 /* BLOG */
 
 .building {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -372,7 +412,7 @@ header {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-
+    padding: 25px;
 }
 
 .map-responsive {
@@ -380,6 +420,8 @@ header {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+    border-radius: 10px;
+    border-style:groove;
 }
 
 .map-responsive iframe {
@@ -496,6 +538,11 @@ header {
 
     }
 
+    #container-map {
+        padding: 15px;
+    }
+   
+
 }
 
 @media screen and (max-width: 480px) {
@@ -569,7 +616,7 @@ header {
     }
 
     #footer a {
-        padding-left: 0px;
+        padding-left: 5px;
     }
 
     .headerContact {
@@ -590,6 +637,15 @@ header {
         
         font-size: 28px;
        
+    } 
+
+    #banner-contact {
+        display:none;
+    
+    }
+
+    #container-map {
+        padding: 5px;
     }
 
 }
