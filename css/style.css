@@ -1,0 +1,595 @@
+/* SELECTOR UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    background-color: #5f6163;
+    color: #FFF;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+.contact {
+    border-radius: 30px;
+    background-color: #7ed321;
+    padding: 10px 15px 10px 15px;
+}
+
+.contact:hover {
+    background-color: #5f6163;
+
+}
+
+/* Banner */
+#banner {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    background-image: url("../assets/img/banner.jpg");
+    background-position: top;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(207, 206, 206, 0.47);
+
+}
+
+.container_banner {
+    font-family: 'Hind Madurai', sans-serif;
+    margin-top: 200px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+
+#banner p {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: black;
+    font-size: 24px;
+    line-height: 80px;
+    /* text-shadow:#7ed321 3px 3px 3px; */
+    font-weight: bold;
+
+}
+
+
+.slide-in-blurred-bottom {
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+    -webkit-animation: slide-in-blurred-bottom 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-bottom 2s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.slide-in-blurred-bottom_2 {
+    font-size: 54px;
+    font-weight: bold;
+    color: black;
+    -webkit-animation: slide-in-blurred-bottom 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-bottom 3s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.slide-in-blurred-left {
+    -webkit-animation: slide-in-blurred-left 5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: slide-in-blurred-left 5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About ME */
+#aboutme {
+    padding-top: 100px;
+    font-family: 'Hind Madurai', sans-serif;
+
+    /* border-bottom: ; */
+}
+
+.flex_header {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#aboutme h1 {
+    padding-bottom: 25px;
+    font-size: 38px;
+}
+
+.green_line {
+    content: "";
+    width: 102px;
+    height: 5px;
+    background: #7ed321;
+    display: block;
+}
+
+.green_text {
+    color: #7ed321;
+}
+
+.flex-container_aboutme {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.flex-item-left {
+    padding: 60px 60px 0px 60px;
+    flex: 50%;
+    font-size: 24px;
+
+}
+
+.flex-item-right {
+    padding: 60px;
+    flex: 50%;
+    font-size: 24px;
+
+}
+
+.text_simple {
+    color: grey;
+    padding-top: 15px;
+}
+
+.text_bold {
+    color: grey;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.p_bottom {
+    padding-bottom: 20px;
+
+}
+
+/* Portfolio */
+#portfolio {
+    padding-top: 100px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+#portfolio h1 {
+    padding-bottom: 25px;
+    font-size: 38px;
+}
+
+.flex-container_portfolio {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_wrap {
+    width: 270px;
+    height: 358px;
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+    /* overflow: hidden; */
+    margin: 15px;
+    background-color: #7ed321;
+    
+}
+
+.img_wrap img {
+    width: 270px;
+    height: 100%;
+    transition: 2s;
+}
+
+.img_wrap img:hover {
+    transform: translateY(-15%);
+    filter: brightness(80%);
+}
+
+/* BLOG */
+
+.building {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #7ed321;
+    font-size: 120px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.building p {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 42px;
+    color: black;
+    margin: 20px;
+}
+
+/* CONTACT */
+
+#banner-contact {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    background-image: url("../assets/img/contact_img.jpg");
+    background-position: top;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(207, 206, 206, 0.47);
+
+}
+
+.container_contact-banner {
+    display: flex;
+    flex: 100%;
+    font-family: 'Hind Madurai', sans-serif;
+    align-items: center;
+
+}
+
+#banner-contact h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #7ed321;
+}
+
+.headerContact {
+    color: black;
+    font-size: 27px;
+    padding: 10px;
+}
+
+#container-contact {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+
+}
+
+.bgcolor {
+    background-color: #7ed321;
+    border-color: #7ed321;
+    font-size: 15px;
+
+}
+
+.bgcolor:hover {
+    background-color: #5f6163;
+    border-color: #5f6163;
+
+}
+
+.bgcolor:focus {
+    background-color: #5f6163;
+    border-color: #5f6163;
+
+}
+
+.form-control-feedback {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    color: #7ed321;
+}
+
+.form-control {
+    padding-left: 30px !important;
+}
+
+.has-feedback {
+    padding-bottom: 30px;
+
+}
+
+#err_form {
+    color: red;
+    font-size: 14px;
+
+}
+
+/* Footer */
+#footer {
+    font-family: 'IBM Plex Sans', sans-serif;
+    align-items: center;
+    background-color: #5f6163;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 80px;
+    width: 100%;
+    padding: 0px 100px 0px 100px;
+}
+
+.footer-flex-item-left {
+
+    flex: 50%;
+
+}
+
+.footer-flex-item-right {
+
+    flex: 50%;
+    color: #FFF;
+    text-align: right;
+
+}
+
+#footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #7ed321;
+}
+
+/* Modal Message Conctact ME */
+
+.swal-button {
+    background-color: #7ed321;
+    border: 1px solid #7ed321;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+.swal-button:hover {
+    background-color: #7ed321;
+    border: 1px solid #7ed321;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* MAPS */
+#container-map {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/** Botón ir al TOP  **/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #7ed321;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background-color: #5f6163;
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width:768px) {
+
+    #banner {
+        flex: 100%;
+    }
+
+    .slide-in-blurred-bottom,
+    .slide-in-blurred-bottom_2 {
+        font-size: 38px;
+    }
+
+    .container {
+        max-width: 750px;
+    }
+
+    .container_banner {
+        padding-left: 30px;
+    }
+
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+
+    .footer-flex-item-left,
+    .footer-flex-item-right {
+        flex: 100%;
+        text-align: center;
+    }
+
+    #footer a:first-child {
+        padding-left: 0px;
+    }
+
+    #aboutme {
+        padding-left: 10px;
+    }
+
+    .flex_header {
+        padding-left: 10px;
+    }
+
+    #portfolio h1 {
+
+        padding-bottom: 10px;
+        font-size: 28px;
+    }
+
+    #aboutme h1 {
+
+        padding-bottom: 10px;
+        font-size: 28px;
+    }
+
+    #aboutme h3 {
+        font-size: 28px;
+    }
+
+    .flex-item-left {
+        padding: 20px 20px 0px 20px;
+        font-size: 24px;
+
+    }
+
+    .flex-item-right {
+        padding: 20px;
+        font-size: 24px;
+
+    }
+
+    #banner-contact h1 {
+        font-size: 36px;
+    }
+
+    .headerContact {
+        font-size: 20px;
+    }
+
+    #container-contact {
+        padding: 25px;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    #banner {
+        flex: 100%;
+    }
+
+    .slide-in-blurred-bottom,
+    .slide-in-blurred-bottom_2 {
+        font-size: 28px;
+    }
+
+    .container {
+        max-width: 400px;
+    }
+
+    .container_banner {
+        padding-left: 15px;
+    }
+
+    .flex-item-right,
+    .flex-item-left {
+        flex: 100%;
+    }
+
+    #aboutme {
+        padding-left: 5px;
+    }
+
+    .flex_header {
+        padding-left: 5px;
+    }
+
+    #portfolio h1 {
+
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    #aboutme h1 {
+
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+
+    #aboutme h3 {
+        font-size: 20px;
+    }
+
+    .flex-item-left {
+        padding: 10px 10px 0px 10px;
+        font-size: 16px;
+
+    }
+
+    .flex-item-right {
+        padding: 10px;
+        font-size: 16px;
+
+    }
+
+    #banner-contact h1 {
+        font-size: 28px;
+    }
+
+    .footer-flex-item-left,
+    .footer-flex-item-right {
+        flex: 100%;
+        text-align: center;
+    }
+
+    #footer a {
+        padding-left: 0px;
+    }
+
+    .headerContact {
+        font-size: 14px;
+    }
+
+    #container-contact {
+        padding: 25px;
+
+    }
+
+    #banner {
+        background-image: url("../assets/img/banner2.jpg");
+
+    }
+
+    .building p {
+        
+        font-size: 28px;
+       
+    }
+
+}
